@@ -14,7 +14,7 @@ variables:
   webAppName: 'mywebapp216240'
 
   # Agent VM image name
-  vmImageName: 'Ubuntu-18.04'
+  vmImageName: 'Ubuntu-20.04'
 
   # Environment name
   environmentName: 'mywebapp216240'
