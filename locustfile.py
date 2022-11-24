@@ -18,7 +18,7 @@ class WebsiteTestUser(HttpUser):
 
     @task(2)
     def predict(self):
-        self.client.post("/predict",{
+        self.client.post("/predict", json={
        "CHAS":{
           "0":0
        },
@@ -37,5 +37,4 @@ class WebsiteTestUser(HttpUser):
        "LSTAT":{
           "0":4.98
        }
-    },
-    headers="Content-Type: application/json")
+    })

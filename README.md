@@ -96,10 +96,11 @@ Note3: the ServiceConnection ID is the number before the name `AzureServiceConne
 * Create the webapp deploying the code from the local workspace to Azure app Service ( using Plan B1)  with this command:
 
 ```sh
-az webapp up -n <name of webapp> --resource-group <name of resouce group> --runtime "PYTHON|3.7" --location eastus --sku B1 --runtime 
+az webapp up -n <your-appservice> 
 ```
 
 ![webapp created](./screenshots/screen%204a%20-%20webapp%20created.png)
+![webapp created on Azure](./screenshots/screen%204b%20-%20webapp%20created.png)
 
 >Note 1: Your service URL  will be something like this : `https://<name of webapp>.azurewebsites.net/`
 >Note 2 : the name of your app must be unique!!!
@@ -143,6 +144,8 @@ git push origin main
 ```
 
 ![Azure devops pipeline integrated](./screenshots/screen%206b%20-%20azure%20devops%20pipeline%20integrated%20to%20repo.png)
+
+![Azure devops deploy pipeline successfully](./screenshots/screen%206c%20-%20azure%20devops%20deploy%20pipeline%20successfully.png)
 
 * Check that the webapp is running opening this URL, example:
 
@@ -191,6 +194,7 @@ Port: 443
 -> Locust could generate a stats report.
 
 ![load testing using locust](./screenshots/screen%2010%20-%20locust%20report.png)
+![locust charts](./screenshots/screen%2010%20-%20locust%20charts.png)
 
 Remaining screenshots can be checked in the screenshot folder.
 
